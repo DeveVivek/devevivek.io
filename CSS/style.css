@@ -1067,9 +1067,9 @@ h3.my-profession {
     grid-template-columns: repeat(2, 1fr);
   }
   .work-card {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
     max-width: 100%;
-    margin-bottom: 20px;
+    margin:  0 10px 15px 5px;
     border: 3px solid var(--bg-black-100);
     border-radius: 7px;
   }

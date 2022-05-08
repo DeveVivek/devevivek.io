@@ -22,7 +22,7 @@ var typed = new Typed(".typing",{
     loop:true
 });
 var typed = new Typed(".auto-type",{
-    strings:["{Web Developer}", "{Competitive Coder}"],
+    strings:["{Web Developer}", "{Competitive Coder}","{Freelancer}"],
     typeSpeed:100,
     BackSpeed:60,
     loop:true

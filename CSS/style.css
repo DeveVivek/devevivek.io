@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 :root {
   --bg-black-900: #f2f2fc;
@@ -11,8 +12,10 @@
 }
 
 body.dark {
-  --bg-black-900: #151515;
-  --bg-black-100: #222222;
+  /* --bg-black-900: #151515; */
+  --bg-black-900: rgba(0, 10, 12, 0.987);
+  --bg-black-100: rgba(7, 18, 18, 0.987);
+  /* --bg-black-100: #222222; */
   --bg-black-50: #393939;
   --text-black-700: #ffffff;
   --text-black-900: #e9e9e9;
@@ -121,9 +124,9 @@ ul {
 .btn {
   font-size: 16px;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 8px 20px;
   color: white;
-  border-radius: 40px;
+  border-radius: 10px;
   display: inline-block;
   white-space: nowrap;
   border: none;
@@ -290,6 +293,7 @@ h3.hello {
 
 h3.hello span {
   font-family: "Clicker Script", cursive;
+  /* font-family: 'Satisfy', cursive; */
   font-size: 30px;
   font-weight: 700;
   color: var(--skin-color);
@@ -620,11 +624,11 @@ h3.my-profession {
   line-height: 25px;
 }
 
- .portofolio .container {
+.portofolio .container {
   padding-bottom: 40px;
 }
 
- .portofolio .portofolio-heading {
+.portofolio .portofolio-heading {
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 40px;
@@ -634,6 +638,7 @@ h3.my-profession {
   color: var(--text-black-900);
   font-weight: 500;
 }
+
 /*
 .portofolio .portofolio-item {
   flex: 0 0 33.33%;
@@ -699,10 +704,12 @@ h3.my-profession {
   display: flex;
   margin-right: 20px;
 }
-.work-details ul li a{
+
+.work-details ul li a {
   color: var(--skin-color);
   font-size: 25px;
 }
+
 .work-details ul li {
   transition: all 0.3s ease;
 }
@@ -786,7 +793,7 @@ h3.my-profession {
 .contact .contact-form .form-item .form-control {
   width: 100%;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 15px;
   background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   padding: 10px 25px;
@@ -998,9 +1005,11 @@ h3.my-profession {
     font-size: 13px;
     font-weight: 500;
   }
+
   .about .about-content .personal-info .buttons {
     margin-top: 10px;
   }
+
   .about .about-content .skills .skill-item .progress {
     width: 100%;
   }
@@ -1068,34 +1077,37 @@ h3.my-profession {
   .work-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .work-card {
     flex: 0 0 45%;
     max-width: 100%;
-    margin:  0 10px 15px 5px;
+    margin: 0 10px 15px 5px;
     border: 3px solid var(--bg-black-100);
     border-radius: 7px;
   }
-  
+
   .work-details {
     margin: 0px 0 0 0px;
   }
-  
+
   .work-details p {
     font-size: 0.6rem;
     margin-top: 5px;
     margin-left: 2px;
   }
-  
+
   .work-details ul {
     margin-right: 3px;
   }
-  .work-details ul li a{
+
+  .work-details ul li a {
     font-size: 17px;
   }
+
   .work-details ul li:first-child {
     margin-right: .8rem;
   }
-  
+
 
 
   /* Services */
@@ -1110,27 +1122,28 @@ h3.my-profession {
     max-width: 100%;
     margin-left: 0px;
   }
+
   .service .service-item .service-item-inner .icon {
     height: 25px;
     width: 25px;
     margin: 0 auto 5px;
   }
-  
+
   .service .service-item .service-item-inner .icon .fa {
     font-size: 20px;
     line-height: 20px;
     color: var(--skin-color);
     transition: all 0.3s ease;
   }
-  
+
   .service .service-item .service-item-inner:hover .icon {
     background: var(--skin-color);
   }
-  
+
   .service .service-item .service-item-inner:hover .icon .fa {
     font-size: 17px;
   }
-  
+
 
   .service .service-item .service-item-inner p {
     font-size: 10px;

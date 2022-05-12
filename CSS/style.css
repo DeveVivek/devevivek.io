@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
@@ -307,8 +308,9 @@ h3.hello {
 }
 
 h3.hello span {
-  font-family: "Clicker Script", cursive;
+  /* font-family: "Clicker Script", cursive; */
   /* font-family: 'Satisfy', cursive; */
+  font-family: 'Oleo Script Swash Caps', cursive;
   font-size: 30px;
   font-weight: 700;
   color: var(--skin-color);

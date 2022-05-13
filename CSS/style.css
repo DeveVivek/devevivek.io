@@ -971,16 +971,19 @@ h3.my-profession {
   }
 
   h3.my-profession {
-    font-size: 20px;
+    font-size: 19px;
     margin: 10px 0;
   }
 
   h3.hello {
-    font-size: 17px;
+    font-size: 16px;
     /* margin: 80px 0; */
     margin-top: 50px;
   }
-
+  h3.hello span{
+    font-weight: 500;
+    font-size: 30px;
+  }
   .about .about-content .about-text h3 {
     font-size: 13px;
     margin-bottom: 15px;

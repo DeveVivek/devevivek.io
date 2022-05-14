@@ -656,16 +656,17 @@ h3.my-profession {
   max-width: 100%;
 }
 .special .special-content .special-text h1 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 15px;
   font-weight: 700;
   color: var(--text-black-900);
 }
 .special .special-content h3 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 15px;
   font-weight: 700;
   color: var(--text-black-900);
+  
 }
 
 .special .special-content .special-text h3 strong {
@@ -676,10 +677,7 @@ h3.my-profession {
   font-size: 16px;
   line-height: 25px;
   color: var(--text-black-700);
-}
-
-.special .special-content .special-text p a {
-  color: #088178;
+  margin-bottom: 20px;
 }
 
 
@@ -988,6 +986,8 @@ h3.my-profession {
   /* .contact .contact-info-item, */
   .portofolio .portofolio-item,
   /* .service .service-item, */
+  .special .special-content,
+  .special .special-content .special-text ,
   .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
@@ -1222,6 +1222,42 @@ h3.my-profession {
   .service .service-item .service-item-inner {
     padding: 5px 5px;
   }
+
+  /* Special Section */
+
+
+  .special .special-content .special-text .special-img img{
+    height: 125px;
+  }
+  
+  .special .special-content .special-text h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+  }
+  .special .special-content h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    
+  }
+  
+  .special .special-content .special-text h3 strong {
+    color: var(--skin-color);
+  }
+  
+  .special .special-content .special-text p {
+    font-size: 11px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    margin-bottom: 20px;
+  }
+  .special .special-content .special-text a {
+    margin-bottom: 30px;
+  }
+
 
   /* Contact */
   .contact .contact-form .form-item .form-control {

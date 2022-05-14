@@ -641,6 +641,50 @@ h3.my-profession {
   line-height: 25px;
 }
 
+/* Special Section */
+.special .special-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.special .special-content .special-text .special-img img{
+  background-size: cover;
+  height: 400px;
+}
+
+.special .special-content .special-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.special .special-content .special-text h1 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+.special .special-content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+
+.special .special-content .special-text h3 strong {
+  color: var(--skin-color);
+}
+
+.special .special-content .special-text p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+}
+
+.special .special-content .special-text p a {
+  color: #088178;
+}
+
+
+
+
 .portofolio .container {
   padding-bottom: 40px;
 }

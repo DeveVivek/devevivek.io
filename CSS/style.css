@@ -446,13 +446,13 @@ h3.my-profession {
   margin-top: 10px;
 }
 
+/* Skills */
 .about .about-content .skills {
   flex: 0 0 40%;
   max-width: 40%;
   margin-top: 40px;
 }
 
-/* Skills */
 #skill-box {
   background-color: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
@@ -460,7 +460,42 @@ h3.my-profession {
   padding: 10px 5px;
   transition: all 0.3s ease;
 }
-
+/* progress bar */
+#container .progress-in.a{
+  animation: progress-animation1 5s forwards;
+}
+@keyframes progress-animation1 {
+  0%{width: 0%;}
+  100%{width: 86%;}
+}
+#container .progress-in.b{
+  animation: progress-animation2 5s forwards;
+}
+@keyframes progress-animation2 {
+  0%{width: 0%;}
+  100%{width: 66%;}
+}
+#container .progress-in.c{
+  animation: progress-animation3 5s forwards;
+}
+@keyframes progress-animation3 {
+  0%{width: 0%;}
+  100%{width: 54%;}
+}
+#container .progress-in.d{
+  animation: progress-animation4 5s forwards;
+}
+@keyframes progress-animation4 {
+  0%{width: 0%;}
+  100%{width: 75%;}
+}
+#container .progress-in.e{
+  animation: progress-animation5 5s forwards;
+}
+@keyframes progress-animation5 {
+  0%{width: 0%;}
+  100%{width: 76%;}
+}
 
 .about .about-content .skills .skill-item {
   flex: 0 0 100%;
@@ -787,6 +822,7 @@ h3.my-profession {
 .work-details ul li a {
   color: var(--skin-color);
   font-size: 25px;
+  transition: all 0.3s ease;
 }
 
 .work-details ul li {
@@ -997,8 +1033,10 @@ h3.my-profession {
   .home .home-img {
     display: none;
   }
+  .special .special-content .special-text .special-img img {
+    height: 275px;
+  }
 }
-
 
 @media (max-width:767px) {
 

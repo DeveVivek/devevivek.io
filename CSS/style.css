@@ -314,7 +314,7 @@ h3.hello span {
   /* font-family: "Clicker Script", cursive; */
   /* font-family: 'Satisfy', cursive; */
   font-family: 'Oleo Script Swash Caps', cursive;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--skin-color);
 }
@@ -463,6 +463,7 @@ h3.my-profession {
 /* progress bar */
 #container .progress-in.a{
   animation: progress-animation1 5s forwards;
+  animation-delay: 2s;
 }
 @keyframes progress-animation1 {
   0%{width: 0%;}
@@ -470,6 +471,7 @@ h3.my-profession {
 }
 #container .progress-in.b{
   animation: progress-animation2 5s forwards;
+  animation-delay: 2s;
 }
 @keyframes progress-animation2 {
   0%{width: 0%;}
@@ -477,6 +479,7 @@ h3.my-profession {
 }
 #container .progress-in.c{
   animation: progress-animation3 5s forwards;
+  animation-delay: 2s;
 }
 @keyframes progress-animation3 {
   0%{width: 0%;}
@@ -484,6 +487,7 @@ h3.my-profession {
 }
 #container .progress-in.d{
   animation: progress-animation4 5s forwards;
+  animation-delay: 2s;
 }
 @keyframes progress-animation4 {
   0%{width: 0%;}
@@ -491,6 +495,7 @@ h3.my-profession {
 }
 #container .progress-in.e{
   animation: progress-animation5 5s forwards;
+  animation-delay: 2s;
 }
 @keyframes progress-animation5 {
   0%{width: 0%;}

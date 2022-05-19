@@ -1358,12 +1358,12 @@ h3.my-profession {
   }
 
   .contact .contact-info-item .icon .fa {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--skin-color);
   }
 
   .contact .contact-info-item h4 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
     color: var(--text-black-900);
     text-transform: capitalize;
@@ -1371,7 +1371,7 @@ h3.my-profession {
   }
 
   .contact .contact-info-item p {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
     color: var(--text-black-700);
     font-weight: 400;

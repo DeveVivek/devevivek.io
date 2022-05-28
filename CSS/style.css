@@ -138,6 +138,22 @@ ul {
 .btn:hover {
   transform: scale(1.03);
 }
+.btnAD {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: var(--skin-color);
+  transition: all 0.3s ease;
+}
+
+.btnAD:hover {
+  transform: scale(1.03);
+}
 
 .shadow-dark {
   box-shadow: 0 0 20px rgba(48, 46, 77, .015);
@@ -454,6 +470,7 @@ h3.my-profession {
 }
 
 #skill-box {
+  flex: 50%;
   background-color: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
@@ -635,6 +652,7 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
+
 .service .container {
   padding-bottom: 40px;
 }
@@ -699,14 +717,28 @@ h3.my-profession {
 }
 
 /* Special Section */
-.special .special-content {
-  flex: 0 0 100%;
-  max-width: 100%;
+
+#special-box{
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  padding: 10px 5px;
+  transition: all 0.3s ease;
+}
+.blockchain{
+  flex: 0 0 48%;
+  max-width: 50%;
+}
+.crypto{
+  flex: 0 0 48%;
+  max-width: 50%;
+  margin-left: 30px;
 }
 
 .special .special-content .special-text .special-img img {
   background-size: cover;
-  height: 400px;
+  height: 200px;
+  /* max-width: 50%; */
 }
 
 .special .special-content .special-text {
@@ -715,15 +747,15 @@ h3.my-profession {
 }
 
 .special .special-content .special-text h1 {
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 25px;
+  margin-bottom: 5px;
   font-weight: 700;
   color: var(--text-black-900);
 }
 
 .special .special-content h3 {
-  font-size: 25px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
   font-weight: 700;
   color: var(--text-black-900);
 
@@ -734,11 +766,12 @@ h3.my-profession {
 }
 
 .special .special-content .special-text p {
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 12px;
+  line-height: 20px;
   color: var(--text-black-700);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
 
 
 
@@ -1290,21 +1323,26 @@ h3.my-profession {
 
   /* Special Section */
 
-
+  .blockchain, .crypto{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
   .special .special-content .special-text .special-img img {
-    height: 125px;
+    height: 100px;
   }
 
   .special .special-content .special-text h1 {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
     font-weight: 700;
     color: var(--text-black-900);
   }
 
   .special .special-content h3 {
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 13px;
+    margin-bottom: 5px;
     font-weight: 700;
     color: var(--text-black-900);
 
@@ -1315,14 +1353,14 @@ h3.my-profession {
   }
 
   .special .special-content .special-text p {
-    font-size: 11px;
-    line-height: 25px;
+    font-size: 10px;
+    line-height: 15px;
     color: var(--text-black-700);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .special .special-content .special-text a {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
 

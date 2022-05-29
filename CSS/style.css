@@ -50,7 +50,7 @@ ul {
 
 .section {
   background: var(--bg-black-900);
-  /* min-height: 0vh; */
+  min-height: 0vh;
   padding: 0 20px;
   display: block;
   opacity: 1;
@@ -141,6 +141,7 @@ ul {
   /* transform: scale(1.03); */
   background: var(--text-black-700);
 }
+
 .btnAD {
   font-size: 12px;
   font-weight: 600;
@@ -150,7 +151,7 @@ ul {
   display: inline-block;
   white-space: nowrap;
   border: 2px solid #20c863;
-  background:var(--bg-black-100);
+  background: var(--bg-black-100);
   transition: all 0.3s ease;
 }
 
@@ -164,6 +165,41 @@ ul {
   box-shadow: 0 0 20px rgba(48, 46, 77, .015);
 }
 
+
+#header {
+  display: none;
+}
+
+
+#navbar li {
+  margin-top: 20px;
+  list-style: none;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  transition: 0.1s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #20c863;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  background: #20c863;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
 .aside {
   width: 270px;
   background: var(--bg-black-100);
@@ -302,7 +338,7 @@ ul {
   font-weight: 700;
   margin-left: 10px;
   padding: 10px 25px;
-  color:#20c863;
+  color: #20c863;
   border-radius: 5px;
   display: inline-block;
   white-space: nowrap;
@@ -484,46 +520,81 @@ h3.my-profession {
   padding: 10px 5px;
   transition: all 0.3s ease;
 }
+
 /* progress bar */
-#container .progress-in.a{
+#container .progress-in.a {
   animation: progress-animation1 5s forwards;
   animation-delay: 2s;
 }
+
 @keyframes progress-animation1 {
-  0%{width: 0%;}
-  100%{width: 86%;}
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 86%;
+  }
 }
-#container .progress-in.b{
+
+#container .progress-in.b {
   animation: progress-animation2 5s forwards;
   animation-delay: 2s;
 }
+
 @keyframes progress-animation2 {
-  0%{width: 0%;}
-  100%{width: 66%;}
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 66%;
+  }
 }
-#container .progress-in.c{
+
+#container .progress-in.c {
   animation: progress-animation3 5s forwards;
   animation-delay: 2s;
 }
+
 @keyframes progress-animation3 {
-  0%{width: 0%;}
-  100%{width: 54%;}
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 54%;
+  }
 }
-#container .progress-in.d{
+
+#container .progress-in.d {
   animation: progress-animation4 5s forwards;
   animation-delay: 2s;
 }
+
 @keyframes progress-animation4 {
-  0%{width: 0%;}
-  100%{width: 75%;}
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
 }
-#container .progress-in.e{
+
+#container .progress-in.e {
   animation: progress-animation5 5s forwards;
   animation-delay: 2s;
 }
+
 @keyframes progress-animation5 {
-  0%{width: 0%;}
-  100%{width: 76%;}
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 76%;
+  }
 }
 
 .about .about-content .skills .skill-item {
@@ -725,18 +796,20 @@ h3.my-profession {
 
 /* Special Section */
 
-#special-box{
+#special-box {
   background-color: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
   padding: 10px 5px;
   transition: all 0.3s ease;
 }
-.blockchain{
+
+.blockchain {
   flex: 0 0 48%;
   max-width: 50%;
 }
-.crypto{
+
+.crypto {
   flex: 0 0 48%;
   max-width: 50%;
   margin-left: 30px;
@@ -1078,6 +1151,7 @@ h3.my-profession {
   .home .home-img {
     display: none;
   }
+
   .special .special-content .special-text .special-img img {
     height: 275px;
   }
@@ -1098,6 +1172,67 @@ h3.my-profession {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  #header {
+    display: flex;
+    height: 35px;
+    background: var(--bg-black-900);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 120px;
+    background-color: var(--bg-black-900);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 30px 0px 20px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  #navbar.active {
+    right: 0px;
+    height: 45vh;
+    justify-content: space-between;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+  }
+
+  #mobile #bar {
+    display: flex;
+  }
+
+  #mobile i {
+    color: var(--text-black-700);
+    font-size: 20px;
+    padding-left: 75px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 10px;
+    /* left: 30px; */
+    color: var(--text-black-700);
+    font-size: 15px;
+  }
+
 
   .section .container {
     padding-top: 20px;
@@ -1144,6 +1279,7 @@ h3.my-profession {
   .about .about-content .personal-info .info-item p span {
     font-size: 11px;
   }
+
   .about .about-content .personal-info .info-item p span a {
     color: #088178;
     font-size: 12px;
@@ -1335,12 +1471,14 @@ h3.my-profession {
 
   /* Special Section */
 
-  .blockchain, .crypto{
+  .blockchain,
+  .crypto {
     flex: 0 0 100%;
     max-width: 100%;
     margin: 0;
     margin-top: 20px;
   }
+
   .special .special-content .special-text .special-img img {
     height: 100px;
   }

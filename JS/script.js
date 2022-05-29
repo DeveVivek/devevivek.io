@@ -18,13 +18,13 @@ window.addEventListener("load", ()=>{
 var typed = new Typed(".typing",{
     strings:["Web Developer", "Competitive Coder"],
     typeSpeed:100,
-    BackSpeed:60,
+    BackSpeed:0,
     loop:true
 });
 var typed = new Typed(".auto-type",{
     strings:["{Web Developer}", "{Competitive Coder}","{Freelancer}"],
     typeSpeed:100,
-    BackSpeed:60,
+    BackSpeed:0,
     loop:true
 });
 

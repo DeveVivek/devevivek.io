@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 :root {
   --bg-black-900: #f2f2fc;
@@ -87,6 +88,7 @@ ul {
 }
 
 .section-title h2 {
+  margin-top: 15px;
   font-size: 40px;
   color: var(--text-black-900);
   font-weight: 700;
@@ -200,6 +202,7 @@ ul {
   bottom: -4px;
   left: 0px;
 }
+
 .aside {
   width: 270px;
   background: var(--bg-black-100);
@@ -367,30 +370,39 @@ ul {
 h3.hello {
   font-size: 28px;
   margin: 15px 0;
+  margin-top: 0;
+  margin-left: 50px;
+
 }
 
 h3.hello span {
-  /* font-family: "Clicker Script", cursive; */
-  /* font-family: 'Satisfy', cursive; */
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  color: var(--skin-color);
+  color: var(--text-black-700);
 }
 
 h3.my-profession {
-  font-size: 30px;
-  margin: 15px 0;
+
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 .typing {
-  color: var(--skin-color);
+  color: #20c863;
+  font-family: 'Oswald', sans-serif;
 }
 
 .home-info p {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   font-size: 17px;
   color: var(--text-black-700);
+  margin-left: 50px;
+}
+
+.hire-me {
+  margin-left: 50px;
 }
 
 .home .home-img {
@@ -450,6 +462,7 @@ h3.my-profession {
   margin-bottom: 15px;
   font-weight: 700;
   color: var(--text-black-900);
+  font-family: 'Oswald', sans-serif;
 }
 
 .about .about-content .about-text h3 span {
@@ -457,7 +470,7 @@ h3.my-profession {
 }
 
 .about .about-content .about-text p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25px;
   color: var(--text-black-700);
 }
@@ -1195,7 +1208,6 @@ h3.my-profession {
     height: 100vh;
     width: 120px;
     background-color: var(--bg-black-900);
-    box-shadow: var(--box-shadow);
     padding: 30px 0px 20px 20px;
     cursor: pointer;
     transition: 0.3s;
@@ -1253,19 +1265,27 @@ h3.my-profession {
   }
 
   h3.my-profession {
-    font-size: 19px;
-    margin: 10px 0;
+    font-size: 15px;
+    margin-left: 0;
+    margin-top: 50px;
   }
 
   h3.hello {
-    font-size: 16px;
-    /* margin: 80px 0; */
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-left: 0;
   }
 
   h3.hello span {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 35px;
+  }
+
+  .home-info p {
+    margin-left: 0px;
+  }
+
+  .hire-me {
+    margin-left: 0px;
   }
 
   .about .about-content .about-text h3 {
@@ -1341,11 +1361,13 @@ h3.my-profession {
   }
 
   .about .about-content .about-text p {
-    font-size: 13px;
+    font-size: 11px;
+    line-height: 1.5;
   }
 
   .about .about-content .timeline .timeline-text {
     font-size: 12px;
+    line-height: 1.8;
     font-weight: 600;
   }
 

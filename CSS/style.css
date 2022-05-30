@@ -16,9 +16,10 @@
 }
 
 body.dark {
-  /* --bg-black-900: #151515; */
-  --bg-black-900: rgba(0, 10, 12, 0.987);
-  --bg-black-100: rgba(7, 18, 18, 0.987);
+  --bg-black-900: rgb(7, 17, 26);
+  /* --bg-black-900: rgba(0, 10, 12, 0.987); */
+  /* --bg-black-100: rgba(7, 18, 18, 0.987); */
+  --bg-black-100: rgb(7, 15, 26);
   /* --bg-black-100: #1a232c; */
   --bg-black-50: #393939;
   --text-black-700: #ffffff;
@@ -53,6 +54,7 @@ ul {
 
 .section {
   background: var(--bg-black-900);
+  /* background: rgb(7, 16, 26); */
   min-height: 0vh;
   padding: 0 20px;
   display: block;
@@ -426,8 +428,8 @@ h3.my-profession {
   position: absolute;
   height: 80px;
   width: 80px;
-  border-bottom: 10px solid var(--skin-color);
-  border-right: 10px solid var(--skin-color);
+  border-bottom: 10px solid #20c863;
+  border-right: 10px solid #20c863;
   right: 20px;
   bottom: -40px;
 }
@@ -437,8 +439,8 @@ h3.my-profession {
   position: absolute;
   height: 80px;
   width: 80px;
-  border-top: 10px solid var(--skin-color);
-  border-left: 10px solid var(--skin-color);
+  border-top: 10px solid #20c863;
+  border-left: 10px solid #20c863;
   left: 20px;
   top: -40px;
 }
@@ -1198,7 +1200,8 @@ h3.my-profession {
     top: 0;
     left: 0;
   }
-  #header .title{
+
+  #header .title {
     color: #20c863;
     margin: auto;
     margin-left: 10px;
@@ -1234,7 +1237,7 @@ h3.my-profession {
     align-items: flex-end;
     padding-left: 120px;
     margin: auto;
-    
+
   }
 
   #mobile #bar {
@@ -1774,7 +1777,7 @@ h3.my-profession {
     width: 210px;
     height: 300px;
     background: #121212;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
     overflow: hidden;
     border-radius: 5px;
   }
@@ -1802,7 +1805,7 @@ h3.my-profession {
   .card-info {
     position: absolute;
     bottom: 0;
-    color: #088178;
+    color: #fff;
     width: 100%;
     height: 90px;
     text-align: center;
@@ -1818,11 +1821,11 @@ h3.my-profession {
 
   #card-name {
     font-weight: bolder;
-    color: var(--skin-color);
+    color: #fff;
   }
 
   .card-links a {
-    color: #fff;
+    color: #20c863;
     font-size: 20px;
     padding: 4px 13px;
   }

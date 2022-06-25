@@ -34,6 +34,34 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-1);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+.back-top-btn:is(:hover, :focus) {
+  background-color: var(--rich-black-fogra-29);
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -393,7 +421,7 @@ h3.hello span {
 h3.my-profession {
 
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 50px;
 }
 
@@ -410,7 +438,40 @@ h3.my-profession {
 }
 
 .hire-me {
-  margin-left: 50px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.hire a {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-icon {
+  float: left;
+  margin-top: 0px;
+  margin-left: 40px;
+  max-width: 15px;
+}
+
+
+.hero-icon a {
+  display: inline-block;
+  width: 35px;
+  margin-bottom: 10px;
+  height: 35px;
+  background-color: var(--bg-black-100);
+  border-radius: 8px;
+  font-size: 20px;
+  color: var(--skin-color);
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.hero-icon a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .home .home-img {
@@ -1073,36 +1134,42 @@ h3.my-profession {
 
 /* footer */
 .footer-distributed {
-  background-color: var(--bg-black-100);
+  /* background-color: var(--bg-black-100); */
+  background-color: #088178;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
-  height: 120px;
+  height: 70px;
   text-align: left;
   font: normal 16px sans-serif;
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 
 .footer-distributed .footer-left p {
   color: var(--text-black-700);
-  font-size: 10px;
-  margin-top: 60px;
-  margin-left: 500px;
+  font-size: 12px;
+  margin: auto;
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .footer-distributed .footer-right {
-  float: left;
-  margin-left: 438px;
-  margin-top: 10px;
+  float: right;
+  margin: auto;
+  margin-right: 30px;
+  margin-top: 0px;
+  /* margin-bottom: 20px; */
   max-width: 225px;
 }
 
 .footer-distributed .footer-head p {
   /* color: rgb(65, 176, 80); */
   color: #20c863;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 900;
-  margin-left: 480px;
+  /* margin-left: 480px; */
+  margin-top: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1303,7 +1370,35 @@ h3.my-profession {
   }
 
   .hire-me {
+    margin-left: 50px;
+  }
+
+  .hero-icon {
+    float: left;
+    margin-top: 0px;
     margin-left: 0px;
+    max-width: 15px;
+  }
+
+
+  .hero-icon a {
+    display: inline-block;
+    width: 35px;
+    margin-bottom: 10px;
+    height: 35px;
+    background-color: var(--bg-black-100);
+    border-radius: 8px;
+    font-size: 20px;
+    color: var(--skin-color);
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all 0.25s;
+  }
+
+  .hero-icon a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
   }
 
   .about .about-content .about-text h3 {
@@ -1319,7 +1414,7 @@ h3.my-profession {
   }
 
   .about .about-content .personal-info .info-item p span a {
-    color: #20c863;
+    color: #088178;
     font-size: 12px;
     font-weight: 600;
   }
@@ -1800,7 +1895,7 @@ h3.my-profession {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(7,16,27) 5%, transparent);
+    background: linear-gradient(to top, rgb(7, 16, 27) 5%, transparent);
     opacity: 0;
     transition: 0.7s ease;
     z-index: 1;

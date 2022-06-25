@@ -1729,29 +1729,21 @@ h3.my-profession {
     height: 150px;
     text-align: left;
     font: normal 16px sans-serif;
-    padding: 30px 30px;
+    /* padding: 30px 30px; */
   }
 
   .footer-distributed .footer-left p {
     font-size: 10px;
-    margin-top: 60px;
-    margin-left: 115px;
+    margin-top: 100px;
+    margin-left: 95px;
   }
 
   .footer-distributed .footer-right {
-    float: left;
+    display: none;
+    /* float: left;
     margin-left: 58px;
     margin-top: 10px;
-    max-width: 225px;
-  }
-
-  .footer-distributed .footer-head p {
-    /* color: rgb(65, 176, 80); */
-    color: #088178;
-    font-size: 20px;
-    font-weight: 900;
-    margin-left: 100px;
-    font-family: "Poppins", sans-serif;
+    max-width: 225px; */
   }
 
   /* navbar */

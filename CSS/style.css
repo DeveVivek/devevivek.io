@@ -1134,8 +1134,7 @@ h3.my-profession {
 
 /* footer */
 .footer-distributed {
-  /* background-color: var(--bg-black-100); */
-  background-color: #088178;
+  background-color: var(--bg-black-900);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -1163,16 +1162,6 @@ h3.my-profession {
   max-width: 225px;
 }
 
-.footer-distributed .footer-head p {
-  /* color: rgb(65, 176, 80); */
-  color: #20c863;
-  font-size: 24px;
-  font-weight: 900;
-  /* margin-left: 480px; */
-  margin-top: 20px;
-  font-family: "Poppins", sans-serif;
-}
-
 .footer-distributed .footer-right a {
   display: inline-block;
   width: 35px;
@@ -1184,6 +1173,7 @@ h3.my-profession {
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
+  margin-top: 10px;
   transition: all 0.25s;
 }
 

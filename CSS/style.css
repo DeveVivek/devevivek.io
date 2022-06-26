@@ -161,11 +161,11 @@ ul {
   font-weight: 500;
   padding: 8px 20px;
   /* color: white; */
-  color: #20c863;
+  color: var(--skin-color);
   border-radius: 5px;
   display: inline-block;
   white-space: nowrap;
-  border: 2px solid #20c863;
+  border: 2px solid var(--skin-color);
   /* background: var(--skin-color); */
   background: var(--bg-black-100);
   transition: all 0.3s ease;
@@ -180,11 +180,11 @@ ul {
   font-size: 12px;
   font-weight: 600;
   padding: 5px 10px;
-  color: #20c863;
+  color: var(--skin-color);
   border-radius: 5px;
   display: inline-block;
   white-space: nowrap;
-  border: 2px solid #20c863;
+  border: 2px solid var(--skin-color);
   background: var(--bg-black-100);
   transition: all 0.3s ease;
 }
@@ -221,7 +221,7 @@ ul {
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #20c863;
+  color: var(--skin-color);
 }
 
 #navbar li a.active::after,
@@ -229,7 +229,7 @@ ul {
   content: '';
   width: 50%;
   height: 2px;
-  background: #20c863;
+  background: var(--skin-color);
   position: absolute;
   bottom: -4px;
   left: 0px;
@@ -277,8 +277,8 @@ ul {
   position: absolute;
   width: 20px;
   height: 20px;
-  border-bottom: 5px solid #20c863;
-  border-left: 5px solid #20c863;
+  border-bottom: 5px solid var(--skin-color);
+  border-left: 5px solid var(--skin-color);
   bottom: 0;
   left: 0;
 }
@@ -288,8 +288,8 @@ ul {
   position: absolute;
   width: 20px;
   height: 20px;
-  border-top: 5px solid #20c863;
-  border-right: 5px solid #20c863;
+  border-top: 5px solid var(--skin-color);
+  border-right: 5px solid var(--skin-color);
   top: 0;
   right: 0;
 }
@@ -313,7 +313,7 @@ ul {
   height: 2px;
   width: 18px;
   /* background: var(--skin-color); */
-  background: #20c863;
+  background: var(--skin-color);
   display: inline-block;
   position: relative;
 }
@@ -322,7 +322,7 @@ ul {
   content: "";
   height: 2px;
   width: 18px;
-  background: #20c863;
+  background: var(--skin-color);
   background: var(--skin-color);
   position: absolute;
   top: -6px;
@@ -333,7 +333,7 @@ ul {
   content: "";
   height: 2px;
   width: 18px;
-  background: #20c863;
+  background: var(--skin-color);
   background: var(--skin-color);
   position: absolute;
   top: 6px;
@@ -360,7 +360,7 @@ ul {
 }
 
 .aside .nav li a.active {
-  color: #20c863;
+  color: var(--skin-color);
   /* color: var(--skin-color); */
 }
 
@@ -377,11 +377,11 @@ ul {
   font-weight: 700;
   margin-left: 10px;
   padding: 10px 25px;
-  color: #20c863;
+  color: var(--skin-color);
   border-radius: 5px;
   display: inline-block;
   white-space: nowrap;
-  border: 2px solid #20c863;
+  border: 2px solid var(--skin-color);
   /* background: #088178; */
   background: var(--bg-black-100);
   transition: all 0.3s ease;
@@ -426,7 +426,7 @@ h3.my-profession {
 }
 
 .typing {
-  color: #20c863;
+  color: var(--skin-color);
   font-family: 'Oswald', sans-serif;
 }
 
@@ -438,8 +438,9 @@ h3.my-profession {
 }
 
 .hire-me {
-  margin-left: 80px;
+  margin-right: 400px;
   margin-top: 40px;
+  float: right;
 }
 
 .hire a {
@@ -452,6 +453,7 @@ h3.my-profession {
   margin-top: 0px;
   margin-left: 40px;
   max-width: 15px;
+  z-index: 1000001;
 }
 
 
@@ -494,8 +496,8 @@ h3.my-profession {
   position: absolute;
   height: 80px;
   width: 80px;
-  border-bottom: 10px solid #20c863;
-  border-right: 10px solid #20c863;
+  border-bottom: 10px solid var(--skin-color);
+  border-right: 10px solid var(--skin-color);
   right: 20px;
   bottom: -40px;
 }
@@ -505,8 +507,8 @@ h3.my-profession {
   position: absolute;
   height: 80px;
   width: 80px;
-  border-top: 10px solid #20c863;
-  border-left: 10px solid #20c863;
+  border-top: 10px solid var(--skin-color);
+  border-left: 10px solid var(--skin-color);
   left: 20px;
   top: -40px;
 }
@@ -546,7 +548,7 @@ h3.my-profession {
 }
 
 .about .about-content .about-text p a {
-  color: #20c863;
+  color: #088178;
 }
 
 .about .about-content .personal-info {
@@ -576,7 +578,7 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info .info-item p span a {
-  color: #20c863;
+  color: #088178;
 }
 
 .about .about-content .personal-info .buttons {
@@ -819,7 +821,7 @@ h3.my-profession {
 }
 
 .service .service-item {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
@@ -828,7 +830,7 @@ h3.my-profession {
   background-color: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
-  padding: 30px 15px;
+  padding: 10px 5px;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -838,18 +840,18 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner .icon {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .service .service-item .service-item-inner .icon .fa {
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 40px;
   color: var(--skin-color);
   transition: all 0.3s ease;
 }
@@ -859,12 +861,12 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover .icon .fa {
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
 }
 
 .service .service-item .service-item-inner h4 {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 15px;
   color: var(--text-black-900);
   font-weight: 700;
@@ -872,7 +874,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner p {
-  font-size: 16px;
+  font-size: 13px;
   color: var(--text-black-700);
   line-height: 25px;
 }
@@ -980,11 +982,11 @@ h3.my-profession {
 } */
 
 .work-card {
-  max-width: 400px;
+  max-width: 30px;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  flex: 0 0 33.33%;
+  flex: 0 0 22%;
   max-width: 30%;
   margin-bottom: 30px;
   border: 6px solid var(--bg-black-100);
@@ -995,7 +997,7 @@ h3.my-profession {
 
 .work-card img {
   width: 100%;
-  max-height: 300px;
+  max-height: 250px;
   object-fit: contain;
   flex: 1;
   display: block;
@@ -1010,7 +1012,7 @@ h3.my-profession {
 
 .work-details p {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-black-700);
   margin-top: 8px;
 }
@@ -1021,7 +1023,7 @@ h3.my-profession {
 }
 
 .work-details ul li a {
-  color: var(--skin-color);
+  color: var(--text-black-700);
   font-size: 25px;
   transition: all 0.3s ease;
 }
@@ -1031,7 +1033,7 @@ h3.my-profession {
 }
 
 .work-details ul li a:hover {
-  color: #20c863;
+  color: var(--skin-color);
 }
 
 .work-details ul li:first-child {
@@ -1084,7 +1086,7 @@ h3.my-profession {
 }
 
 .contact .contact-info-item p span a {
-  color: #20c863;
+  color: #088178;
 }
 
 .contact .contact-form {
@@ -1264,7 +1266,7 @@ h3.my-profession {
   }
 
   #header .title {
-    color: #20c863;
+    color: var(--skin-color);
     margin: auto;
     margin-left: 10px;
     font-family: 'Babylonica', cursive;
@@ -1361,7 +1363,7 @@ h3.my-profession {
   }
 
   .hire-me {
-    margin-left: 50px;
+    margin-right: 150px;
   }
 
   .hero-icon {
@@ -1907,7 +1909,7 @@ h3.my-profession {
   }
 
   .card-links a {
-    color: #20c863;
+    color: var(--skin-color);
     font-size: 20px;
     padding: 4px 13px;
   }

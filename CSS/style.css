@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cosmopolitan-script');
 
 
 :root {
@@ -1270,6 +1271,7 @@ h3.my-profession {
     margin: auto;
     margin-left: 10px;
     font-family: 'Babylonica', cursive;
+    /* font-family: 'Cosmopolitan Script', sans-serif; */                           
     font-size: 30px;
   }
 

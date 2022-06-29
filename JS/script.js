@@ -14,6 +14,12 @@ window.addEventListener("load", ()=>{
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+const dayNightNav = document.querySelector(".day-night-nav");
+dayNightNav.addEventListener("click", () =>{
+    dayNightNav.querySelector("i").classList.toggle("fa-sun");
+    dayNightNav.querySelector("i").classList.toggle("fa-moon");
+    document.body.classList.toggle("dark");
+})
 
 var typed = new Typed(".typing",{
     strings:["Web Developer", "Competitive Coder"],

@@ -1301,20 +1301,23 @@ h3.my-profession {
   #mobile {
     display: flex;
     align-items: flex-end;
-    padding-left: 120px;
+    /* padding-left: 120px; */
     margin: auto;
-    
+    margin-top: 30px;
   }
   
   #mobile #bar {
-    cursor: pointer;
     display: flex;
+    position: absolute;
+    right: 10%;
+    font-size: 20px;
+    cursor: pointer;
   }
 
   #mobile i {
     color: var(--text-black-700);
     font-size: 20px;
-    padding-left: 75px;
+    float: right;
   }
 
   #close {

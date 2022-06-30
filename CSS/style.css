@@ -108,6 +108,10 @@ ul {
   width: 100%;
   margin: auto;
 }
+.contact-container{
+  display: flex;
+  flex: 50%;
+}
 
 .section .container {
   padding-top: 60px;
@@ -1056,10 +1060,10 @@ h3.my-profession {
 }
 
 .contact .contact-info-item {
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 50%;
+  max-width: 48%;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .contact .contact-info-item .icon {
@@ -1085,6 +1089,12 @@ h3.my-profession {
   color: var(--text-black-700);
   font-weight: 400;
 }
+.contact .contact-info-item a {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+  font-weight: 400;
+}
 
 .contact .contact-info-item p span a {
   color: #088178;
@@ -1093,6 +1103,7 @@ h3.my-profession {
 .contact .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
+  margin-left: 20px;
 }
 
 .contact .contact-form .col-6 {
@@ -1649,6 +1660,10 @@ h3.my-profession {
 
 
   /* Contact */
+  .contact-container{
+    display: initial;
+    flex: 100%;
+  }
   .contact .contact-form .form-item .form-control {
     font-size: 13px;
     height: 40px;
@@ -1657,7 +1672,7 @@ h3.my-profession {
 
   .contact .contact-form .form-item {
     margin-bottom: 10px;
-    margin-left: 32px;
+    /* margin-left: 32px; */
   }
 
   .contact-title {
@@ -1693,6 +1708,12 @@ h3.my-profession {
   }
 
   .contact .contact-info-item p {
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--text-black-700);
+    font-weight: 400;
+  }
+  .contact .contact-info-item a {
     font-size: 10px;
     line-height: 20px;
     color: var(--text-black-700);

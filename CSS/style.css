@@ -195,7 +195,8 @@ ul {
   justify-content: flex-end;
   align-items: center;
   margin-right: 20%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
 .navbar ul li {
@@ -237,6 +238,36 @@ ul {
 
 #navbar li a.active::after,
 #navbar li a:hover::after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  background: var(--skin-color);
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+#navbar-home li {
+  margin-top: 10px;
+  list-style: none;
+  position: relative;
+}
+
+#navbar-home li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  transition: 0.1s ease;
+}
+
+#navbar-home li a:hover,
+#navbar-home li a.active {
+  color: var(--skin-color);
+}
+
+#navbar-home li a.active::after,
+#navbar-home li a:hover::after {
   content: '';
   width: 50%;
   height: 2px;
@@ -447,7 +478,7 @@ h3.my-profession {
 }
 
 .hire-me {
-  margin-right: 400px;
+  margin-right: 450px;
   margin-top: 40px;
   float: right;
 }
@@ -1392,7 +1423,9 @@ h3.my-profession {
     transition: 0.3s;
     z-index: 1000;
   }
-
+#navbar-home{
+  display: none;
+}
   #navbar.active {
     right: 0px;
     height: 45vh;
@@ -1428,6 +1461,10 @@ h3.my-profession {
     /* left: 30px; */
     color: var(--text-black-700);
     font-size: 15px;
+  }
+
+  .navbar ul li p {
+    display: none;
   }
 
 
@@ -1624,7 +1661,7 @@ h3.my-profession {
   }
 
   .work-card {
-    flex: 0 0 45%;
+    flex: 0 0 44%;
     max-width: 100%;
     margin: 0 10px 15px 5px;
     border: 3px solid var(--bg-black-100);
@@ -1764,6 +1801,10 @@ h3.my-profession {
   .contact .contact-form .form-item {
     margin-bottom: 10px;
     /* margin-left: 32px; */
+  }
+
+  .contact .contact-form {
+    margin-left: 20px;
   }
 
   .contact-title {

@@ -35,33 +35,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.back-top-btn {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  background-color: var(--deep-saffron);
-  color: var(--white);
-  padding: 15px;
-  border-radius: 50%;
-  box-shadow: var(--shadow-1);
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-}
-
-.back-top-btn.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
-}
-
-.back-top-btn:is(:hover, :focus) {
-  background-color: var(--rich-black-fogra-29);
-}
-
-
-
 
 * {
   margin: 0;
@@ -84,8 +57,8 @@ ul {
 .section {
   background: var(--bg-black-900);
   /* background: rgb(7, 16, 26); */
-  min-height: 0vh;
-  padding: 0 20px;
+  min-height: 100vh;
+  padding: 0 30px;
   display: block;
   opacity: 1;
 }
@@ -95,7 +68,8 @@ ul {
 }
 
 .main-content {
-  padding-left: 270px;
+  /* padding-left: 270px; */
+  padding-left: 0px;
 }
 
 .padd-15 {
@@ -108,13 +82,14 @@ ul {
   width: 100%;
   margin: auto;
 }
-.contact-container{
+
+.contact-container {
   display: flex;
   flex: 50%;
 }
 
 .section .container {
-  padding-top: 60px;
+  padding-top: 0px;
   padding-bottom: 70px;
 }
 
@@ -204,6 +179,25 @@ ul {
   box-shadow: 0 0 20px rgba(48, 46, 77, .015);
 }
 
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin-left: 30px;
+}
 
 #header {
   display: none;
@@ -240,7 +234,7 @@ ul {
   left: 0px;
 }
 
-.aside {
+/* .aside {
   width: 270px;
   background: var(--bg-black-100);
   position: fixed;
@@ -317,7 +311,7 @@ ul {
 .aside .nav-toggler span {
   height: 2px;
   width: 18px;
-  /* background: var(--skin-color); */
+  /* background: var(--skin-color);
   background: var(--skin-color);
   display: inline-block;
   position: relative;
@@ -366,16 +360,13 @@ ul {
 
 .aside .nav li a.active {
   color: var(--skin-color);
-  /* color: var(--skin-color); */
+  color: var(--skin-color);
 }
 
 .aside .nav li a i {
   margin-right: 15px;
-}
+} */
 
-.navbar {
-  display: none;
-}
 
 .super-btn {
   font-size: 16px;
@@ -401,6 +392,7 @@ ul {
   min-height: 100vh;
   display: flex;
   color: var(--text-black-900);
+  width: 100vw;
 }
 
 .home .home-info {
@@ -1090,6 +1082,7 @@ h3.my-profession {
   color: var(--text-black-700);
   font-weight: 400;
 }
+
 .contact .contact-info-item a {
   font-size: 16px;
   line-height: 25px;
@@ -1213,6 +1206,7 @@ h3.my-profession {
   z-index: 999999;
   background: var(--bg-black-900);
 }
+
 #loader {
   display: block;
   position: relative;
@@ -1227,11 +1221,13 @@ h3.my-profession {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 1s linear infinite;
 }
+
 @media (max-width: 767px) {
   #loader {
     margin: -15% 0 0 -10%;
   }
 }
+
 #loader:before {
   content: "";
   position: absolute;
@@ -1245,6 +1241,7 @@ h3.my-profession {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 #loader:after {
   content: "";
   position: absolute;
@@ -1258,24 +1255,28 @@ h3.my-profession {
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -1339,6 +1340,7 @@ h3.my-profession {
     max-width: 100%;
   }
 
+
   #header {
     display: flex;
     height: 40px;
@@ -1355,7 +1357,7 @@ h3.my-profession {
     margin: auto;
     margin-left: 10px;
     font-family: 'Babylonica', cursive;
-    /* font-family: 'Cosmopolitan Script', sans-serif; */                           
+    /* font-family: 'Cosmopolitan Script', sans-serif; */
     font-size: 30px;
   }
 
@@ -1389,7 +1391,7 @@ h3.my-profession {
     margin: auto;
     margin-top: 30px;
   }
-  
+
   #mobile #bar {
     display: flex;
     position: absolute;
@@ -1733,10 +1735,11 @@ h3.my-profession {
 
 
   /* Contact */
-  .contact-container{
+  .contact-container {
     display: initial;
     flex: 100%;
   }
+
   .contact .contact-form .form-item .form-control {
     font-size: 13px;
     height: 40px;
@@ -1786,6 +1789,7 @@ h3.my-profession {
     color: var(--text-black-700);
     font-weight: 400;
   }
+
   .contact .contact-info-item a {
     font-size: 10px;
     line-height: 20px;
@@ -1887,46 +1891,6 @@ h3.my-profession {
     /* display: none; */
     background: var(--bg-black-900);
     position: fixed;
-  }
-
-  #btn-1 {
-    height: 19px;
-    width: 48px;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: var(--box-shadow);
-  }
-
-  #btn-2 {
-    border-radius: 3px;
-    height: 19px;
-    width: 50px;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-  }
-
-  #btn-3 {
-    border-radius: 3px;
-    height: 19px;
-    width: 65px;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-  }
-
-  #btn-4 {
-    border-radius: 3px;
-    height: 19px;
-    width: 70px;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-  }
-
-  #btn-5 {
-    border-radius: 3px;
-    height: 19px;
-    width: 62px;
-    text-align: center;
-    box-shadow: var(--box-shadow);
   }
 
   .portofolio .portofolio-item {

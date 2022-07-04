@@ -1718,7 +1718,7 @@ h3.my-profession {
 
   /* Special Section */
 
-  .blockchain,
+  /* .blockchain,
   .crypto {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1757,7 +1757,7 @@ h3.my-profession {
 
   .special .special-content .special-text a {
     margin-bottom: 5px;
-  }
+  } */
 
   /* Contact */
   .contact-container {
@@ -1777,7 +1777,7 @@ h3.my-profession {
   }
 
   .contact .contact-form {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .contact-title {
@@ -1941,25 +1941,7 @@ h3.my-profession {
   .work-cards {
     grid-template-columns: 1fr;
   }
-
-  /* Profile Card */
-
-  .card-container {
-    display: flex;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 60px;
-    width: 220px;
-    height: 220px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
-  .card-container::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: url("hero2.jpg") center/cover;
+  .main-content{
+    min-width: 100%;
   }
 }

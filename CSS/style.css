@@ -186,6 +186,10 @@ ul {
   position: fixed;
   z-index: 1000;
 }
+.navbar.active{
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+}
 
 .navbar ul {
   display: flex;
@@ -208,6 +212,7 @@ ul {
   font-size: 30px;
   margin-right: 280px;
 }
+
 
 #header {
   display: none;
@@ -272,6 +277,7 @@ ul {
   bottom: -4px;
   left: 0px;
 }
+
 
 .super-btn {
   font-size: 16px;

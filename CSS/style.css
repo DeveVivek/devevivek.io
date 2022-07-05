@@ -230,6 +230,8 @@ ul {
   font-weight: 700;
   color: var(--text-black-900);
   transition: 0.1s ease;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
 }
 
 #navbar li a:hover,
@@ -1299,6 +1301,8 @@ h3.my-profession {
     right: 10%;
     font-size: 20px;
     cursor: pointer;
+    box-shadow: var(--box-shadow);
+
   }
 
   #mobile i {

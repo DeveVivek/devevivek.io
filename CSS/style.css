@@ -388,6 +388,7 @@ h3.my-profession {
   max-width: 40%;
   text-align: center;
   position: relative;
+
 }
 
 /* .home .home-img2 {
@@ -425,6 +426,7 @@ h3.my-profession {
   border-radius: 50%;
   margin: auto;
   margin-top: 50px;
+  box-shadow: var(--box-shadow);
 }
 
 .about .about-content {

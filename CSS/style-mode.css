@@ -18,7 +18,7 @@
     cursor: pointer;
     transition: all 0.3 ease;
     border-radius: 50%;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
 }
 .style-switcher-nav .s-icon {
     display: none;
@@ -59,6 +59,6 @@
         cursor: pointer;
         transition: all 0.3 ease;
         border-radius: 5px;
-        box-shadow: var(--box-shadow);
+        /* box-shadow: var(--box-shadow); */
     }
 }

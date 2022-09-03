@@ -16,16 +16,18 @@
 }
 
 body.dark {
-  --bg-black-900: rgb(7, 17, 26);
+  --bg-black-900: #0a192f;
+  /* --bg-black-900: rgb(7, 17, 26); */
   /* --bg-black-900: rgba(0, 10, 12, 0.987); */
   /* --bg-black-100: rgba(7, 18, 18, 0.987); */
-  --bg-black-100: rgb(7, 15, 26);
-  /* --bg-black-100: #1a232c; */
+  /* --bg-black-100: rgb(7, 15, 26); */
+  --bg-black-100: #112240;
   --bg-black-50: #393939;
-  --text-black-700: #ffffff;
-  --text-black-900: #e9e9e9;
+  --text-black-900: #ccd6f6;
+  --text-black-700: #ccd6f6;
   --box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(0, 0, 0, 3);
+  --skin-color:#64ffda;
 }
 
 
@@ -221,7 +223,7 @@ ul {
 #navbar li {
   margin-top: 20px;
   list-style: none;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
   position: relative;
 }
 
@@ -1309,7 +1311,7 @@ h3.my-profession {
     right: 10%;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
   }
 
   #mobile i {

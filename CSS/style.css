@@ -1255,7 +1255,7 @@ h3.my-profession {
 
   #header {
     display: flex;
-    height: 40px;
+    height: 50px;
     background: var(--bg-black-900);
     box-shadow: var(--box-shadow);
     z-index: 999;
@@ -1303,14 +1303,14 @@ h3.my-profession {
     align-items: flex-end;
     /* padding-left: 120px; */
     margin: auto;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   #mobile #bar {
     display: flex;
     position: absolute;
     right: 10%;
-    font-size: 20px;
+    font-size:25px;
     cursor: pointer;
     /* box-shadow: var(--box-shadow); */
   }
@@ -1327,7 +1327,7 @@ h3.my-profession {
     top: 10px;
     /* left: 30px; */
     color: var(--text-black-700);
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .navbar ul li p {
@@ -1584,52 +1584,6 @@ h3.my-profession {
   .service .service-item .service-item-inner {
     padding: 5px 5px;
   }
-
-
-  /* Special Section */
-
-  /* .blockchain,
-  .crypto {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin: 0;
-    margin-top: 20px;
-  }
-
-  .special .special-content .special-text .special-img img {
-    height: 100px;
-  }
-
-  .special .special-content .special-text h1 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 700;
-    color: var(--text-black-900);
-  }
-
-  .special .special-content h3 {
-    font-size: 13px;
-    margin-bottom: 5px;
-    font-weight: 700;
-    color: var(--text-black-900);
-  }
-
-  .special .special-content .special-text h3 strong {
-    color: var(--skin-color);
-  }
-
-  .special .special-content .special-text p {
-    font-size: 10px;
-    line-height: 15px;
-    color: var(--text-black-700);
-    margin-bottom: 15px;
-  }
-
-  .special .special-content .special-text a {
-    margin-bottom: 5px;
-  } */
-
-
   /* Contact */
   .contact-container {
     display: initial;
@@ -1827,9 +1781,4 @@ h3.my-profession {
     margin: auto;
     margin-top: 50px;
   }
-
-
-
-  
-
 }
